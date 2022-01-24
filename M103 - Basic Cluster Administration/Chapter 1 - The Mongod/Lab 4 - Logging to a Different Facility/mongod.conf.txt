@@ -1,0 +1,12 @@
+systemLog:
+   destination: file
+   path: /var/mongodb/logs/mongod.log
+storage:
+  dbPath: /var/mongodb/db
+net:
+  bindIp: localhost
+  port: 27000
+security:
+  authorization: enabled
+processManagement:
+  fork: true
