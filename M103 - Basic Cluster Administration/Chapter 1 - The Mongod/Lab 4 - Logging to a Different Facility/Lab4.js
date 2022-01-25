@@ -13,5 +13,17 @@ Lab 4 - Logging to a Different Facility
         The results of these tests will let you know which steps you've yet to complete.
 
 Solution:
+        mongod --config mongod.conf
+        mongo --port 27000
+        use admin
+        mongo admin --host localhost:27000 --eval '
+        db.createUser({
+        user: "m103-admin",
+        pwd: "m103-pass",
+        roles: [
+        {role: "root", db: "admin"}
+        ]
+        })
+        '
 
 	

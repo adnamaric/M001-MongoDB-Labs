@@ -11,6 +11,4 @@ Lab:
 	Click "Run Tests" to run a test that will check applicationData.products for the new data. The results of these tests will let you know which steps you've yet to complete.
 
 Solution:
-
-	Terminal 0:
 	mongoimport --port 27000 /dataset/products.json --db applicationData --collection products -u m103-application-user -p m103-application-pass --authenticationDatabase admin

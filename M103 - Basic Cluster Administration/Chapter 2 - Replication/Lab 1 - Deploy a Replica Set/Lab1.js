@@ -33,6 +33,6 @@ Solution:
   			       ]
 		      })
 	exit
-        mongo --host "m103-repl/localhost:27001" -u "m103-admin" -password "m103-pass"
+    mongo --host "m103-repl/localhost:27001" -u "m103-admin" -password "m103-pass"
 	rs.add("localhost:27002")
 	rs.add("localhost:27003")

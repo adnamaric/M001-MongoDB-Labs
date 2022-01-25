@@ -14,3 +14,12 @@ Lab:
 	The results of these tests will let you know which steps you've yet to complete.
 
 Solution:
+	mongo  --port 27000 -u m103-admin -p m103-pass --authenticationDatabase admin
+	use admin  
+	db.createUser({
+		user: "m103-application-user",
+		pwd: "m103-application-pass",
+		roles: [
+		{role: "readWrite", db: "applicationData"}
+		]
+	})
